@@ -49,18 +49,3 @@ With a tabbed document interface, PDF export, a built-in image uploader, session
 </pre>
 <!--Created using ToHtml.com on 2018-10-25 23:21:01 UTC -->
 
- ```SQLPL
-    Select *
-    From 
-      (Select dual=1) as Dual
-      CROSS APPLY
-      ( -- expression "row constructor".  Cette expression introduite par la clause Values
-        -- permet de simuler une table virtuelle avec ses rangées.  
-      Values 
-        (1, 'RangeeTableNumero1')
-      , (2, 'RangeeTableNumero1')
-      , (3, 'RangeeTableNumero1') 
-      ) as TableNumeroUn (Sequence, Valeur)
-    GROUP BY i
-    ORDER BY 1
- ```
