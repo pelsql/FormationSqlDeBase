@@ -30,7 +30,7 @@ MarkdownPad supports multiple Markdown processing engines, including standard Ma
 
 With a tabbed document interface, PDF export, a built-in image uploader, session management, spell check, auto-save, syntax highlighting and a built-in CSS management interface, there's no limit to what you can do with MarkdownPad.
 
-    
+ ```sql
     Select *
     From 
       ( -- expression "row constructor".  Cette expression introduite par la clause Values
@@ -40,4 +40,4 @@ With a tabbed document interface, PDF export, a built-in image uploader, session
       , (2, 'RangeeTableNumero1')
       , (3, 'RangeeTableNumero1') 
       ) as TableNumeroUn (Sequence, Valeur)
-    
+ ```
