@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="assets/plugins/prism/prism.css">
+<script type="text/javascript" src="assets/plugins/prism/prism.js"></script>
 
 
 ## Welcome to MarkdownPad 2 ##
@@ -30,7 +32,7 @@ MarkdownPad supports multiple Markdown processing engines, including standard Ma
 
 With a tabbed document interface, PDF export, a built-in image uploader, session management, spell check, auto-save, syntax highlighting and a built-in CSS management interface, there's no limit to what you can do with MarkdownPad.
 
- ```sql
+ ```
     Select *
     From 
       ( -- expression "row constructor".  Cette expression introduite par la clause Values
@@ -41,3 +43,17 @@ With a tabbed document interface, PDF export, a built-in image uploader, session
       , (3, 'RangeeTableNumero1') 
       ) as TableNumeroUn (Sequence, Valeur)
  ```
+
+<div id="sql" class="section-block">
+    <div class="code-block">
+        <h6>SQL Script Example</h6>
+        <pre>
+            <code class="language-sql">
+IF (@Date IS NULL) RETURN NULL;
+IF (MONTH(@Date) < 3)
+RETURN LTRIM(STR(YEAR(@Date) - 1)) + '-' + LTRIM(STR(YEAR(@Date)));
+RETURN LTRIM(STR(YEAR(@Date))) + '-' + LTRIM(STR(YEAR(@Date) + 1));
+            </code>
+        </pre>
+    </div><!--//code-block-->
+</div><!--//section-block-->
