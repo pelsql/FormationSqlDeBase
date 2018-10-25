@@ -29,21 +29,6 @@ MarkdownPad supports multiple Markdown processing engines, including standard Ma
 
 With a tabbed document interface, PDF export, a built-in image uploader, session management, spell check, auto-save, syntax highlighting and a built-in CSS management interface, there's no limit to what you can do with MarkdownPad.
 
- ```SQLPL
-    Select *
-    From 
-      (Select dual=1) as Dual
-      CROSS APPLY
-      ( -- expression "row constructor".  Cette expression introduite par la clause Values
-        -- permet de simuler une table virtuelle avec ses rangées.  
-      Values 
-        (1, 'RangeeTableNumero1')
-      , (2, 'RangeeTableNumero1')
-      , (3, 'RangeeTableNumero1') 
-      ) as TableNumeroUn (Sequence, Valeur)
-    GROUP BY i
-    ORDER BY 1
- ```
 
 <pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>If</span> Schema_Id<span style='color:#808030; '>(</span><span style='color:#0000e6; '>'Schemas'</span><span style='color:#808030; '>)</span> <span style='color:#800000; font-weight:bold; '>IS</span> <span style='color:#800000; font-weight:bold; '>NULL</span> <span style='color:#800000; font-weight:bold; '>Exec</span> <span style='color:#808030; '>(</span><span style='color:#0000e6; '>'Create Schema Schemas authorization Dbo'</span><span style='color:#808030; '>)</span>
 <span style='color:#800000; font-weight:bold; '>Exec</span> f$<span style='color:#808030; '>.</span>DropObj <span style='color:#0000e6; '>'[Schemas].[EnumProd]'</span>
@@ -63,3 +48,19 @@ With a tabbed document interface, PDF export, a built-in image uploader, session
 <span style='color:#808030; '>,</span> TFP<span style='color:#808030; '>=</span><span style='color:#800000; font-weight:bold; '>CAST</span><span style='color:#808030; '>(</span><span style='color:#0000e6; '>'TFP'</span> <span style='color:#800000; font-weight:bold; '>as</span> nvarchar<span style='color:#808030; '>(</span><span style='color:#008c00; '>10</span><span style='color:#808030; '>)</span><span style='color:#808030; '>)</span>                <span style='color:#808030; '>,</span> DbTFP<span style='color:#808030; '>=</span><span style='color:#0000e6; '>'SchemasTFP'</span>
 </pre>
 <!--Created using ToHtml.com on 2018-10-25 23:21:01 UTC -->
+
+ ```SQLPL
+    Select *
+    From 
+      (Select dual=1) as Dual
+      CROSS APPLY
+      ( -- expression "row constructor".  Cette expression introduite par la clause Values
+        -- permet de simuler une table virtuelle avec ses rangées.  
+      Values 
+        (1, 'RangeeTableNumero1')
+      , (2, 'RangeeTableNumero1')
+      , (3, 'RangeeTableNumero1') 
+      ) as TableNumeroUn (Sequence, Valeur)
+    GROUP BY i
+    ORDER BY 1
+ ```
